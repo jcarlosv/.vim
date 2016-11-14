@@ -21,3 +21,10 @@ call plug#end()
 "set colorscheme
 set background=dark
 colorscheme solarized
+
+" 80 chars line
+highlight OverLength ctermbg=red guibg=red
+match OverLength /\%81v.\+/
+
+"Using tabs for indentation
+set noet ci pi sts=0 sw=4 ts=4
